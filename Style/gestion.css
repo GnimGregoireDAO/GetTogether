@@ -1,0 +1,193 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../images/background.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #333;
+    padding-top: 30px;
+}
+
+
+#group-management {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    backdrop-filter: blur(5px); 
+    margin: 20px;
+}
+
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #e77e28;
+    outline: none;
+}
+
+
+button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background-color: #e77e28;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #c36315;
+    transform: scale(1.05);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #e77e28;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td.active {
+    color: green;
+}
+
+td.inactive {
+    color: red;
+}
+
+
+form button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    width: auto;
+    background-color: #4CAF50; 
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form button.delete {
+    background-color: #f44336; 
+}
+
+form button.delete:hover {
+    background-color: #d32f2f;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+
+.error-message, .success-message {
+    text-align: center;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+section {
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 768px) {
+    #group-management {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    input, select, button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

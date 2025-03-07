@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.entete {
+    background-color: #ff8f33; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.entete h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    flex-direction: column; 
+    align-items: center;   
+}
+
+
+.profile-container h2 {
+    font-size: 2rem;
+    color: #000000; 
+    font-weight: bold;
+    margin-bottom: 20px;  
+}
+
+
+.profile-container form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.profile-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.profile-container input[type="text"]:focus,
+.profile-container input[type="password"]:focus {
+    outline: none;
+    border-color: #ff8f33;
+}
+
+.profile-container button {
+    background-color: #ff8f33; 
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-container button:hover {
+    background-color: #d74d12; 
+}
+
+
+footer {
+    background-color: #ff8f33;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .profile-container form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .entete h2 {
+        font-size: 1.5rem;
+    }
+}
